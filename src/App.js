@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <HolaMundo/>
-        <AdiosMundo/>
+        <HolaMundo desc="Este es mi primer props"/>
+        <AdiosMundo name="Kike" apellido="Duran" edad="40"/>
       </header>
     </div>
   );
