@@ -12,12 +12,16 @@ function App() {
     apellido : "Duran"
   }
 
+  const saludarFn = name => {
+    console.log("Hola " + name);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <HolaMundo userInfo={userInfo}/>
-        <AdiosMundo userInfo={userInfo}/>
+        <AdiosMundo userInfo={userInfo} saludarFn={saludarFn}/>
       </header>
     </div>
   );
